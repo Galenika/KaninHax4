@@ -1,0 +1,7 @@
+﻿  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_dx9.cpp
+  Source.cpp
+c:\users\kanin\documents\kaninhax4\kaninhax4\source.cpp(4): fatal error C1083: Cannot open include file: 'detour_hook.h': No such file or directory
+  Generating Code...
