@@ -1,7 +1,7 @@
 #pragma once
-#include "ImGui\imgui.h"
-#include "ImGui\imgui_impl_dx9.h"
-#include "ImGui\imgui_internal.h"
+#include <imgui/imgui.h>
+#include <imgui/examples/imgui_impl_dx9.h>
+#include <imgui/imgui_internal.h>
 #include "settings.h"
 #include "sdk.h"
 #include "math.h"
@@ -337,7 +337,7 @@ namespace directx
 				styles["extasy"].Colors[ImGuiCol_ScrollbarGrab] = ImVec4(0.80f, 0.80f, 1.f, 0.31f);
 				styles["extasy"].Colors[ImGuiCol_ScrollbarGrabHovered] = ImVec4(0.56f, 0.56f, 1.f, 1.00f);
 				styles["extasy"].Colors[ImGuiCol_ScrollbarGrabActive] = ImVec4(0.06f, 0.05f, 1.f, 1.00f);
-				styles["extasy"].Colors[ImGuiCol_ComboBg] = ImVec4(0.19f, 1.f, 0.21f, 1.00f);
+				//styles["extasy"].Colors[ImGuiCol_ComboBg] = ImVec4(0.19f, 1.f, 0.21f, 1.00f);
 				styles["extasy"].Colors[ImGuiCol_CheckMark] = ImVec4(0.80f, 0.80f, 0.83f, 0.31f);
 				styles["extasy"].Colors[ImGuiCol_SliderGrab] = ImVec4(1.f, 0.80f, 0.83f, 0.31f);
 				styles["extasy"].Colors[ImGuiCol_SliderGrabActive] = ImVec4(1.f, 1.f, 0.07f, 1.00f);
@@ -353,9 +353,9 @@ namespace directx
 				styles["extasy"].Colors[ImGuiCol_ResizeGrip] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
 				styles["extasy"].Colors[ImGuiCol_ResizeGripHovered] = ImVec4(0.56f, 0.56f, 0.58f, 1.00f);
 				styles["extasy"].Colors[ImGuiCol_ResizeGripActive] = ImVec4(0.06f, 0.05f, 0.07f, 1.00f);
-				styles["extasy"].Colors[ImGuiCol_CloseButton] = ImVec4(0.40f, 0.39f, 0.38f, 0.16f);
-				styles["extasy"].Colors[ImGuiCol_CloseButtonHovered] = ImVec4(0.40f, 0.39f, 0.38f, 0.39f);
-				styles["extasy"].Colors[ImGuiCol_CloseButtonActive] = ImVec4(0.40f, 0.39f, 0.38f, 1.00f);
+				//styles["extasy"].Colors[ImGuiCol_CloseButton] = ImVec4(0.40f, 0.39f, 0.38f, 0.16f);
+				//styles["extasy"].Colors[ImGuiCol_CloseButtonHovered] = ImVec4(0.40f, 0.39f, 0.38f, 0.39f);
+				//styles["extasy"].Colors[ImGuiCol_CloseButtonActive] = ImVec4(0.40f, 0.39f, 0.38f, 1.00f);
 				styles["extasy"].Colors[ImGuiCol_PlotLines] = ImVec4(0.40f, 0.39f, 0.38f, 0.63f);
 				styles["extasy"].Colors[ImGuiCol_PlotLinesHovered] = ImVec4(0.25f, 1.00f, 0.00f, 1.00f);
 				styles["extasy"].Colors[ImGuiCol_PlotHistogram] = ImVec4(0.40f, 0.39f, 0.38f, 0.63f);

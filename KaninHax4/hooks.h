@@ -14,7 +14,8 @@
 #include "remove_sight_blur.h"
 #include "server_functions.h"
 #include "movement_fix.h"
-
+#include <imgui/examples/imgui_impl_dx9.h>
+#include <imgui/examples/imgui_impl_win32.h>
 #include <string>
 
 namespace hooks
@@ -217,7 +218,7 @@ namespace hooks
 					io.DeltaTime = 1.0f / 60.0f;
 					_device->GetCreationParameters(&direct3d_creation_parameters);
 					io.Fonts->AddFontDefault();
-					ImGui_ImplDX9_Init(game_window, _device);
+					ImGui_ImplDX9_Init(_device);
 					__asm mov allowed_return, eax
 					directx::fonts::create();
 					directx::lines::create();
@@ -337,7 +338,7 @@ namespace hooks
 				if (!direct_3d::end_scene::once)
 					return CallWindowProc(window_proc, _hwnd, _umsg, _wparam, _lparam);
 				if (show_menu)
-					ImGui_ImplDX9_WndProcHandler(_hwnd, _umsg, _wparam, _lparam);
+					ImGui_ImplWin32_WndProcHandler(_hwnd, _umsg, _wparam, _lparam);
 				return CallWindowProc(window_proc, _hwnd, _umsg, _wparam, _lparam);
 			}
 		}
