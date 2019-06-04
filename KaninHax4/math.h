@@ -20,12 +20,12 @@ vector3_t clamp_angles(vector3_t angle) {
 
 	if (angle.y > 179.9f)
 		angle.y = 179.9f;
-	if (angle.y < -179.9f)
+	else if (angle.y < -179.9f)
 		angle.y = -179.9f;
 
 	if (angle.x > 89.f)
 		angle.x = 89.f;
-	if (angle.x < -89.f)
+	else if (angle.x < -89.f)
 		angle.x = -89.f;
 	return angle;
 }
@@ -33,7 +33,7 @@ vector3_t clamp_angles(vector3_t angle) {
 float clamp_angle_x(float angle) {
 	if (angle > 89.f)
 		angle = 89.f;
-	if (angle < -89.f)
+	else if (angle < -89.f)
 		angle = -89.f;
 	return angle;
 }
@@ -43,7 +43,7 @@ float clamp_angle_y(float angle) {
 
 	if (angle > 179.9f)
 		angle = 179.9f;
-	if (angle < -179.9f)
+	else if (angle < -179.9f)
 		angle = -179.9f;
 
 	return angle;
