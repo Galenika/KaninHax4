@@ -16,9 +16,6 @@
     <Filter Include="Header Files\interfaces">
       <UniqueIdentifier>{425f741c-9536-465e-9511-631677c95834}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\imgui">
-      <UniqueIdentifier>{619a0a6e-3ea2-4802-b119-691b7f0b98a0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\imgui">
       <UniqueIdentifier>{619bf0e6-43b6-4a9f-9201-880a3f20d2a7}</UniqueIdentifier>
     </Filter>
@@ -56,18 +53,6 @@
     </ClInclude>
     <ClInclude Include="panel.h">
       <Filter>Header Files\interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\imconfig.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\imgui.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\imgui_impl_dx9.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\imgui_internal.h">
-      <Filter>Header Files\imgui</Filter>
     </ClInclude>
     <ClInclude Include="client_mode.h">
       <Filter>Header Files\interfaces</Filter>
