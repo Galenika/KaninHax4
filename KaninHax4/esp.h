@@ -183,7 +183,7 @@ void esp()
 			continue;
 		if (current_entity == local_player)
 			continue;
-		//if (current_entity->get_valid_target())
-		draw_player_esp(current_entity);
+		if (current_entity->get_valid_target())
+			draw_player_esp(current_entity);
 	}
 }

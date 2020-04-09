@@ -221,8 +221,8 @@ bool entity_t::get_valid_target()
 		return false;
 	if (this->get_life_state() != LIFE_ALIVE)
 		return false;
-	if (!this->is_player())
-		return false;
+	//if (!this->is_player())
+	//	return false;
 	if (this->get_is_dormant())
 		return false;
 	return true;

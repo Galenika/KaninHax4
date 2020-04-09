@@ -79,7 +79,7 @@ void start_cheat() {
 		                                                         hwnd_proc_hook)));
 
 	//client_hook.hook_method(&hooks::client::write_usercmd_delta_to_buffer::write_usercmd_delta_to_buffer_hook, 23);
-//	client_mode_hook.hook_method(&hooks::client_mode::create_move::create_move_hook, 24);
+	//client_mode_hook.hook_method(&hooks::client_mode::create_move::create_move_hook, 24);
 //	client_mode_hook.hook_method(&hooks::client_mode::viewmodel_fov::viewmodel_fov_hook, 35);
 //	client_mode_hook.hook_method(&hooks::client_mode::override_view::override_view_hook, 18);
 	d3d_device_hook.hook_method(&hooks::direct_3d::end_scene::end_scene_hook, EndScene_Index);

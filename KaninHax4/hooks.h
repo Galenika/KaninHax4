@@ -63,20 +63,20 @@ namespace hooks
 				local_player = reinterpret_cast<entity_t*>(interfaces::client_entity_list->get_client_entity(
 					interfaces::engine_client->get_local_player_id()));
 
-				movement_fix.on_createmove_start(_cmd);
+				//movement_fix.on_createmove_start(_cmd);
 
 				if (local_player)
 				{
 					//fake_lag();
-					recoil_control(view_angles_to_set, local_player->get_punch());
+					//recoil_control(view_angles_to_set, local_player->get_punch());
 					bunny_hop(local_player->get_flags(), _cmd->buttons);
 					aimbot(view_angles_to_set, _cmd->buttons);
-					anti_aim(view_angles_to_set, _cmd->buttons);
-					triggerbot(_cmd);
-					print_closest_player(); //server function
+					//anti_aim(view_angles_to_set, _cmd->buttons);
+					//triggerbot(_cmd);
+					//print_closest_player(); //server function
 				}
 
-				movement_fix.on_createmove_end(_cmd, view_angles_to_set);
+				//movement_fix.on_createmove_end(_cmd, view_angles_to_set);
 
 				_cmd->viewangles = clamp_angles(view_angles_to_set);
 
@@ -160,7 +160,6 @@ namespace hooks
 				if (local_player && interfaces::engine_client->is_in_game())
 				{
 
-					drawing::draw_filled_rect(10, 20, 100, 430, 0, 255, 25, 255);
 					/*
 					vector3_t pos = local_player->get_head_position();
 					draw_string(10, 20, fonts::arial, 255, 255, 0, 255, std::to_wstring(pos.x).c_str());
