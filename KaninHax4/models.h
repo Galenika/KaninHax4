@@ -1,5 +1,5 @@
 #pragma once
-#include "virtual_table_functions.h"
+#include <kaninsdk/virtual-table-functions.h>
 #include "vector3.h"
 
 struct studio_decal_handle_t 

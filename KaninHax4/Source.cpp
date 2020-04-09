@@ -1,7 +1,7 @@
 #include "pch.h"
-#include "detour_hook.h"
-#include "virtual_table_functions.h"
-#include "virtual_table_pointer_swap_hook.h"
+#include <kaninsdk/detour-hook.h>
+#include <kaninsdk/virtual-table-functions.h>
+#include <kaninsdk/virtual-table-pointer-swap-hook.h>
 #include "hooks.h"
 
 void start_cheat();
@@ -56,18 +56,18 @@ void start_cheat() {
 		interfaces::client, 0) + 0x1B);
 	interfaces::d3d_device = **reinterpret_cast<IDirect3DDevice9***>(pattern_scan(
 		modules::shaderapidx9, "\xA1\x00\x00\x00\x00\x50\x8B\x08\xFF\x51\x0C", "x????xxxxxx") + 1);
-	interfaces::center_print = *reinterpret_cast<center_print_t**>(pattern_scan(
-		modules::client, "\xA1\x00\x00\x00\x00\xB9\x00\x00\x00\x00\xFF\x50\x1C\xE8", "x????x????xxxx")) + 6;
+	//interfaces::center_print = *reinterpret_cast<center_print_t**>(pattern_scan(
+	//	modules::client, "\xA1\x00\x00\x00\x00\xB9\x00\x00\x00\x00\xFF\x50\x1C\xE8", "x????x????xxxx")) + 6;
 
 	//SETUP HOOKS
 	std::cout << "setting up hooks..." << std::endl;
-	client_hook.initialize(interfaces::client, true, modules::client);
-	engine_client_hook.initialize(interfaces::engine_client, true, modules::engine);
+	//client_hook.initialize(interfaces::client, true, modules::client);
+	//engine_client_hook.initialize(interfaces::engine_client, true, modules::engine);
 	d3d_device_hook.initialize(interfaces::d3d_device, true, modules::shaderapidx9);
-	client_mode_hook.initialize(interfaces::client_mode, true, modules::client);
-	panel_hook.initialize(interfaces::panel, true, modules::vgui2);
+	//client_mode_hook.initialize(interfaces::client_mode, true, modules::client);
+//	panel_hook.initialize(interfaces::panel, true, modules::vgui2);
 	//model_render_hook.initialize(interfaces::model_render, true, modules::engine);
-	surface_hook.initialize(interfaces::vgui_surface, true, modules::vguimatsurface);
+//	surface_hook.initialize(interfaces::vgui_surface, true, modules::vguimatsurface);
 
 	//MISC
 	std::cout << "miscellaneous..." << std::endl;
@@ -79,14 +79,16 @@ void start_cheat() {
 		                                                         hwnd_proc_hook)));
 
 	//client_hook.hook_method(&hooks::client::write_usercmd_delta_to_buffer::write_usercmd_delta_to_buffer_hook, 23);
-	client_mode_hook.hook_method(&hooks::client_mode::create_move::create_move_hook, 24);
-	client_mode_hook.hook_method(&hooks::client_mode::viewmodel_fov::viewmodel_fov_hook, 35);
-	client_mode_hook.hook_method(&hooks::client_mode::override_view::override_view_hook, 18);
+//	client_mode_hook.hook_method(&hooks::client_mode::create_move::create_move_hook, 24);
+//	client_mode_hook.hook_method(&hooks::client_mode::viewmodel_fov::viewmodel_fov_hook, 35);
+//	client_mode_hook.hook_method(&hooks::client_mode::override_view::override_view_hook, 18);
 	d3d_device_hook.hook_method(&hooks::direct_3d::end_scene::end_scene_hook, EndScene_Index);
 	d3d_device_hook.hook_method(&hooks::direct_3d::reset::reset_hook, Reset_Index);
 	//d3d_device_hook.hook_method(&hooks::direct_3d::draw_indexed_primitive::draw_indexed_primitive_hook, d3d9_method_indicies::DrawIndexedPrimitive_Index);
-	panel_hook.hook_method(&hooks::panel::paint_traverse::paint_traverse_hook, 41);
+//	panel_hook.hook_method(&hooks::panel::paint_traverse::paint_traverse_hook, 41);
 	//model_render_hook.hook_method(&hooks::model_render::draw_model_execute::draw_model_execute_hook, 21);
-	surface_hook.hook_method(&hooks::surface::lock_cursor::lock_cursor_hook, 67);
+//	surface_hook.hook_method(&hooks::surface::lock_cursor::lock_cursor_hook, 67);
 	std::cout << "successfully applied hooks..." << std::endl;
+	//FreeConsole();
+	//FreeLibraryAndExitThread(cheat_instance, 0);
 }

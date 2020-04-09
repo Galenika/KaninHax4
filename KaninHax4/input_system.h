@@ -1,5 +1,4 @@
 #pragma once
-#include "virtual_table_functions.h"
 
 class input_system_t
 {

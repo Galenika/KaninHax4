@@ -208,15 +208,20 @@ namespace hooks
 			D3DDEVICE_CREATION_PARAMETERS direct3d_creation_parameters;
 			typedef void (__stdcall* end_scene_fn)(LPDIRECT3DDEVICE9);
 
-			void __stdcall end_scene_hook(LPDIRECT3DDEVICE9 _device)
-			{
+			void __stdcall end_scene_hook(LPDIRECT3DDEVICE9 _device) {
 				static auto ret = d3d_device_hook.get_original<end_scene_fn>(EndScene_Index);
-				if (!once)
-				{
+				if (!once) {
+					auto ctx = ImGui::CreateContext();
 					std::cout << "endscene works :)" << std::endl;
 					ImGuiIO& io = ImGui::GetIO();
+					io.DisplaySize.x = 2560;
+					io.DisplaySize.y = 1440;
 					io.DeltaTime = 1.0f / 60.0f;
+
+					io.Fonts->AddFontDefault();
+
 					_device->GetCreationParameters(&direct3d_creation_parameters);
+					ImGui::SetCurrentContext(ctx);
 					io.Fonts->AddFontDefault();
 					ImGui_ImplDX9_Init(_device);
 					__asm mov allowed_return, eax
@@ -231,7 +236,6 @@ namespace hooks
 				__asm mov return_address, eax
 				if (return_address == allowed_return)
 					return d3d_device_hook.get_original<end_scene_fn>(EndScene_Index)(_device);
-
 				DWORD old_d3drs_colorwriteenable_render_state;
 				_device->GetRenderState(D3DRS_COLORWRITEENABLE, &old_d3drs_colorwriteenable_render_state);
 				_device->SetRenderState(D3DRS_COLORWRITEENABLE, 0xffffffff);
@@ -240,7 +244,7 @@ namespace hooks
 				{
 					if (!menu_key_was_pressed)
 					{
-						PlaySoundA(sieg_heil, nullptr, SND_ASYNC | SND_MEMORY);
+						//PlaySoundA(sieg_heil, nullptr, SND_ASYNC | SND_MEMORY);
 						show_menu = !show_menu;
 					}
 					menu_key_was_pressed = true;

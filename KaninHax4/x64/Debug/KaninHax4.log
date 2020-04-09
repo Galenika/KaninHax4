@@ -1,0 +1,200 @@
+﻿  imgui_stdlib.cpp
+E:\SDK\imgui\misc\cpp\imgui_stdlib.cpp(12,10): fatal error C1083: Cannot open include file: 'imgui.h': No such file or directory
+  imgui_freetype.cpp
+E:\SDK\imgui\misc\freetype\imgui_freetype.h(7,10): fatal error C1083: Cannot open include file: 'imgui.h': No such file or directory
+  pch.cpp
+  Source.cpp
+E:\SDK\kaninsdk\detour-hook.h(50,53): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
+E:\SDK\kaninsdk\detour-hook.h(50,53): warning C4302: 'type cast': truncation from 'void *' to 'int'
+E:\SDK\kaninsdk\detour-hook.h(50,56): warning C4312: 'reinterpret_cast': conversion from 'int' to 'int *' of greater size
+E:\SDK\kaninsdk\detour-hook.h(50,88): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
+E:\SDK\kaninsdk\detour-hook.h(50,88): warning C4302: 'type cast': truncation from 'void *' to 'int'
+E:\SDK\kaninsdk\detour-hook.h(50,116): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
+E:\SDK\kaninsdk\detour-hook.h(50,116): warning C4302: 'type cast': truncation from 'void *' to 'int'
+E:\SDK\kaninsdk\detour-hook.h(61,39): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
+E:\SDK\kaninsdk\detour-hook.h(61,39): warning C4302: 'type cast': truncation from 'void *' to 'int'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\vector3.h(102,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\entity.h(107,10): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\entity.h(239,65): warning C4312: 'reinterpret_cast': conversion from 'unsigned int' to 'unsigned int *' of greater size
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\entity.h(240,67): warning C4312: 'reinterpret_cast': conversion from 'unsigned int' to 'unsigned int *' of greater size
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\entity.h(241,54): warning C4312: 'reinterpret_cast': conversion from 'unsigned int' to 'unsigned int *' of greater size
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\cheat_server.h(50,69): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\cheat_server.h(64,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(272,26): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(272,15): error C2146: syntax error: missing ';' before identifier 'client_hook'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(273,33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(273,1): error C2086: 'int vtable_hook_t': redefinition
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(272): message : see declaration of 'vtable_hook_t'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(273,15): error C2146: syntax error: missing ';' before identifier 'engine_client_hook'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(274,30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(274,1): error C2086: 'int vtable_hook_t': redefinition
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(272): message : see declaration of 'vtable_hook_t'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(274,15): error C2146: syntax error: missing ';' before identifier 'd3d_device_hook'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(275,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(275,1): error C2086: 'int vtable_hook_t': redefinition
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(272): message : see declaration of 'vtable_hook_t'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(275,15): error C2146: syntax error: missing ';' before identifier 'client_mode_hook'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(276,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(276,1): error C2086: 'int vtable_hook_t': redefinition
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(272): message : see declaration of 'vtable_hook_t'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(276,15): error C2146: syntax error: missing ';' before identifier 'panel_hook'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(277,32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(277,1): error C2086: 'int vtable_hook_t': redefinition
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(272): message : see declaration of 'vtable_hook_t'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(277,15): error C2146: syntax error: missing ';' before identifier 'model_render_hook'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(278,27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(278,1): error C2086: 'int vtable_hook_t': redefinition
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(272): message : see declaration of 'vtable_hook_t'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(278,15): error C2146: syntax error: missing ';' before identifier 'surface_hook'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(283,2): error C2065: 'client_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(284,2): error C2065: 'engine_client_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(285,2): error C2065: 'd3d_device_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(286,2): error C2065: 'client_mode_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(287,2): error C2065: 'panel_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(288,2): error C2065: 'model_render_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\sdk.h(289,2): error C2065: 'surface_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\math.h(64,51): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\math.h(74,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\math.h(85,56): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\math.h(92,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\math.h(93,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\math.h(95,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\math.h(96,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\math.h(106,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\math.h(107,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\math.h(108,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\math.h(109,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\math.h(110,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\math.h(111,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(44,69): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(58,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(72,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(76,44): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(77,44): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(219,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(264,42): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(264,38): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(264,64): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(264,59): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(272,42): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(272,38): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(272,66): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(272,59): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(272,106): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(272,93): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(272,143): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(272,133): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\drawing.h(325,29): error C2065: 'ImGuiCol_ChildWindowBg': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\visible_check.h(34,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(45,109): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(61,34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(78,109): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(94,57): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(94,40): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(147,96): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(147,76): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(150,95): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(150,71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(150,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(150,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(163,82): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(163,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(164,84): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\aimbot.h(164,65): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\color.h(7,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\color.h(8,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\color.h(9,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(20,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(22,135): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(22,106): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(22,85): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(22,56): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(32,87): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(32,49): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(70,90): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(70,72): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(109,99): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(170,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(170,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(171,90): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(171,70): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(171,64): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(171,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\esp.h(181,109): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\radar.h(13,80): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\radar.h(13,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\radar.h(14,78): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\radar.h(14,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\radar.h(16,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\radar.h(25,109): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\radar.h(45,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\radar.h(46,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\radar.h(48,80): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\radar.h(48,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\server_functions.h(24,109): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(32,23): error C2065: 'client_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(35,15): error C3536: 'ret': cannot be used before it is initialized
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(35,12): error C2064: term does not evaluate to a function taking 6 arguments
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(91,23): error C2065: 'client_mode_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(95,15): error C3536: 'ret': cannot be used before it is initialized
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(95,12): error C2064: term does not evaluate to a function taking 1 arguments
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(105,23): error C2065: 'client_mode_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(114,8): error C3536: 'ret': cannot be used before it is initialized
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(114,5): error C2064: term does not evaluate to a function taking 2 arguments
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(134,23): error C2065: 'panel_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(143,16): error C3536: 'ret': cannot be used before it is initialized
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(143,13): error C2064: term does not evaluate to a function taking 4 arguments
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(179,12): error C2064: term does not evaluate to a function taking 4 arguments
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(195,5): error C2065: 'model_render_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(213,23): error C2065: 'd3d_device_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(222,6): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(222,12): error C2065: 'mov': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(222,16): error C2146: syntax error: missing ';' before identifier 'allowed_return'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(222,32): error C2065: 'eax': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(223,22): error C2143: syntax error: missing ';' before 'directx::fonts::create'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(231,5): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(231,11): error C2065: 'mov': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(231,15): error C2146: syntax error: missing ';' before identifier 'return_address'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(231,31): error C2065: 'eax': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(232,5): error C2143: syntax error: missing ';' before 'if'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(233,13): error C2065: 'd3d_device_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(243,18): error C2065: 'sieg_heil': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(272,15): error C3536: 'ret': cannot be used before it is initialized
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(272,12): error C2064: term does not evaluate to a function taking 1 arguments
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(286,16): error C2065: 'd3d_device_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(292,15): error C3536: 'ret': cannot be used before it is initialized
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(311,6): error C2065: 'd3d_device_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(321,12): error C2065: 'd3d_device_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(356,33): error C2065: 'surface_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(357,31): error C2065: 'surface_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(359,19): error C3536: 'unlock_cursor': cannot be used before it is initialized
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(359,6): error C2064: term does not evaluate to a function taking 1 arguments
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(361,17): error C3536: 'lock_cursor': cannot be used before it is initialized
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\hooks.h(361,6): error C2064: term does not evaluate to a function taking 1 arguments
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(64,2): error C2065: 'client_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(65,2): error C2065: 'engine_client_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(66,2): error C2065: 'd3d_device_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(67,2): error C2065: 'client_mode_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(68,2): error C2065: 'panel_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(70,2): error C2065: 'surface_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(77,72): error C2065: 'GWL_WNDPROC': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(79,74): warning C4311: 'reinterpret_cast': pointer truncation from 'LRESULT (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' to 'long'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(79,74): warning C4302: 'reinterpret_cast': truncation from 'LRESULT (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' to 'long'
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(82,2): error C2065: 'client_mode_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(83,2): error C2065: 'client_mode_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(84,2): error C2065: 'client_mode_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(85,2): error C2065: 'd3d_device_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(86,2): error C2065: 'd3d_device_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(88,2): error C2065: 'panel_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(90,2): error C2065: 'surface_hook': undeclared identifier
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(22,2): error C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\kanin\Documents\repos\kaninhax4\KaninHax4\Source.cpp(23,2): error C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...

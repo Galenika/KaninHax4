@@ -1,5 +1,5 @@
 #pragma once
-#include "virtual_table_functions.h"
+#include <kaninsdk/virtual-table-functions.h>
 
 class panel_t
 {

@@ -1,5 +1,5 @@
 #pragma once
-#include "virtual_table_functions.h"
+#include <kaninsdk/virtual-table-functions.h>
 
 class center_print_t // *reinterpret_cast<CCenterPrint**>(FindPattern("client.dll", "A1 ? ? ? ? B9 ? ? ? ? FF 50 1C E8")) + 6
 {

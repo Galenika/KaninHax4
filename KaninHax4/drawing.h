@@ -1,6 +1,8 @@
 #pragma once
 #include <imgui/imgui.h>
 #include <imgui/examples/imgui_impl_dx9.h>
+#include <imgui/examples/imgui_impl_win32.h>	//FreeConsole();
+	//FreeLibraryAndExitThread(my_instance, 0);
 #include <imgui/imgui_internal.h>
 #include "settings.h"
 #include "sdk.h"
@@ -322,7 +324,6 @@ namespace directx
 				styles["extasy"].Colors[ImGuiCol_Text] = ImVec4(0.8f, 0.f, 0.5f, 1.00f);
 				styles["extasy"].Colors[ImGuiCol_TextDisabled] = ImVec4(0.24f, 0.23f, 0.29f, 1.00f);
 				styles["extasy"].Colors[ImGuiCol_WindowBg] = ImVec4(1.f, 1.f, 1.f, 1.00f);
-				styles["extasy"].Colors[ImGuiCol_ChildWindowBg] = ImVec4(0.07f, 0.07f, 0.09f, 1.00f);
 				styles["extasy"].Colors[ImGuiCol_PopupBg] = ImVec4(0.05f, 0.f, 1.f, 1.00f);
 				styles["extasy"].Colors[ImGuiCol_Border] = ImVec4(0.80f, 0.80f, 1.f, 0.88f);
 				styles["extasy"].Colors[ImGuiCol_BorderShadow] = ImVec4(0.92f, 0.91f, 0.88f, 0.00f);
@@ -378,6 +379,8 @@ void draw_menu()
 	if (!show_menu)
 		return;
 	ImGui_ImplDX9_NewFrame();
+	ImGui_ImplWin32_NewFrame();
+	ImGui::NewFrame();
 
 	ImGui::GetIO().MouseDrawCursor = true;
 

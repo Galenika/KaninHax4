@@ -1,6 +1,6 @@
 #pragma once
 #include "vector3.h"
-#include "virtual_table_functions.h"
+#include <kaninsdk/virtual-table-functions.h>
 
 struct ray_t
 {
