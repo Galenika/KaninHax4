@@ -176,14 +176,14 @@ void esp()
 {
 	if (!current_settings.esp_enabled)
 		return;
-	for (size_t i = 0; i <= interfaces::global_vars->max_clients; i++)
+	for (size_t i = 0; i <= 64; i++)//interfaces::global_vars->max_clients; i++)
 	{
 		entity_t* current_entity = reinterpret_cast<entity_t*>(interfaces::client_entity_list->get_client_entity(i));
 		if (!current_entity)
 			continue;
 		if (current_entity == local_player)
 			continue;
-		if (current_entity->get_valid_target())
-			draw_player_esp(current_entity);
+		//if (current_entity->get_valid_target())
+		draw_player_esp(current_entity);
 	}
 }

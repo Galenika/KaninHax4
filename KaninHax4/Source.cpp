@@ -65,9 +65,9 @@ void start_cheat() {
 	//engine_client_hook.initialize(interfaces::engine_client, true, modules::engine);
 	d3d_device_hook.initialize(interfaces::d3d_device, true, modules::shaderapidx9);
 	//client_mode_hook.initialize(interfaces::client_mode, true, modules::client);
-//	panel_hook.initialize(interfaces::panel, true, modules::vgui2);
+	panel_hook.initialize(interfaces::panel, true, modules::vgui2);
 	//model_render_hook.initialize(interfaces::model_render, true, modules::engine);
-//	surface_hook.initialize(interfaces::vgui_surface, true, modules::vguimatsurface);
+	surface_hook.initialize(interfaces::vgui_surface, true, modules::vguimatsurface);
 
 	//MISC
 	std::cout << "miscellaneous..." << std::endl;
@@ -85,9 +85,9 @@ void start_cheat() {
 	d3d_device_hook.hook_method(&hooks::direct_3d::end_scene::end_scene_hook, EndScene_Index);
 	d3d_device_hook.hook_method(&hooks::direct_3d::reset::reset_hook, Reset_Index);
 	//d3d_device_hook.hook_method(&hooks::direct_3d::draw_indexed_primitive::draw_indexed_primitive_hook, d3d9_method_indicies::DrawIndexedPrimitive_Index);
-//	panel_hook.hook_method(&hooks::panel::paint_traverse::paint_traverse_hook, 41);
+	panel_hook.hook_method(&hooks::panel::paint_traverse::paint_traverse_hook, 41);
 	//model_render_hook.hook_method(&hooks::model_render::draw_model_execute::draw_model_execute_hook, 21);
-//	surface_hook.hook_method(&hooks::surface::lock_cursor::lock_cursor_hook, 67);
+	surface_hook.hook_method(&hooks::surface::lock_cursor::lock_cursor_hook, 67);
 	std::cout << "successfully applied hooks..." << std::endl;
 	//FreeConsole();
 	//FreeLibraryAndExitThread(cheat_instance, 0);

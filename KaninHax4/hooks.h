@@ -142,20 +142,25 @@ namespace hooks
 				{
 					return ret(_ecx, _panel, _force_repaint, _allow_force);
 				}
-
+/*
 				if (!once)
 				{
-					//fonts::setup();
-					//interfaces::vgui_surface->get_screen_size(&screen_size_x, &screen_size_y);
-					//interfaces::vgui_surface->get_text_size(fonts::arial, L"卐 KaninHax 4.0 by Affe2626 卐", watermark_text_wide, watermark_text_tall);
+					fonts::setup();
+					interfaces::vgui_surface->get_screen_size(&screen_size_x, &screen_size_y);
+					interfaces::vgui_surface->get_text_size(fonts::arial, L"卐 KaninHax 4.0 by Affe2626 卐", watermark_text_wide, watermark_text_tall);
 
 					once = true;
 				}
-				//draw_string(screen_size_x / 2 - watermark_text_wide / 2, 10, fonts::arial, 255, 0, 0, 255, L"卐 KaninHax 4.0 by Affe2626 卐");
+				draw_string(screen_size_x / 2 - watermark_text_wide / 2, 10, fonts::arial, 255, 0, 0, 255, L"卐 KaninHax 4.0 by Affe2626 卐");
+				*/
 
-				on_paint_traverse();
+				drawing::draw_line(10, 10, 50, 50, 255, 0, 255, 255);
+
+				//on_paint_traverse();
 				if (local_player && interfaces::engine_client->is_in_game())
 				{
+
+					drawing::draw_filled_rect(10, 20, 100, 430, 0, 255, 25, 255);
 					/*
 					vector3_t pos = local_player->get_head_position();
 					draw_string(10, 20, fonts::arial, 255, 255, 0, 255, std::to_wstring(pos.x).c_str());
@@ -163,14 +168,14 @@ namespace hooks
 					draw_string(10, 40, fonts::arial, 255, 255, 0, 255, std::to_wstring(pos.z).c_str());
 					draw_aimbot_fov_circle();
 					*/
-					
+					/*
 					if (can_shoot(local_player))
 						drawing::draw_filled_rect(10, 10, 50, 50, 0, 255, 0, 255);
 					else
 						drawing::draw_filled_rect(10, 10, 50, 50, 255, 0, 0, 255);
-
+						*/
 					esp();
-					radar();
+					//radar();
 				}
 				/*
 				if(trigger_hit_enemy)
@@ -213,7 +218,10 @@ namespace hooks
 				if (!once) {
 					auto ctx = ImGui::CreateContext();
 					std::cout << "endscene works :)" << std::endl;
+					ImGui_ImplDX9_Init(_device);
+					ImGui_ImplWin32_Init(game_window);
 					ImGuiIO& io = ImGui::GetIO();
+
 					io.DisplaySize.x = 2560;
 					io.DisplaySize.y = 1440;
 					io.DeltaTime = 1.0f / 60.0f;
@@ -221,21 +229,16 @@ namespace hooks
 					io.Fonts->AddFontDefault();
 
 					_device->GetCreationParameters(&direct3d_creation_parameters);
-					ImGui::SetCurrentContext(ctx);
 					io.Fonts->AddFontDefault();
-					ImGui_ImplDX9_Init(_device);
+					ImGui::SetCurrentContext(ctx);
 					__asm mov allowed_return, eax
 					directx::fonts::create();
 					directx::lines::create();
-					directx::im_gui::styles::setup();
-					ImGui::GetStyle() = {directx::im_gui::styles::styles["extasy"]};
+					//directx::im_gui::styles::setup();
+					//ImGui::GetStyle() = {directx::im_gui::styles::styles["extasy"]};
 					once = true;
 				}
 
-				void* return_address;
-				__asm mov return_address, eax
-				if (return_address == allowed_return)
-					return d3d_device_hook.get_original<end_scene_fn>(EndScene_Index)(_device);
 				DWORD old_d3drs_colorwriteenable_render_state;
 				_device->GetRenderState(D3DRS_COLORWRITEENABLE, &old_d3drs_colorwriteenable_render_state);
 				_device->SetRenderState(D3DRS_COLORWRITEENABLE, 0xffffffff);
@@ -246,6 +249,7 @@ namespace hooks
 					{
 						//PlaySoundA(sieg_heil, nullptr, SND_ASYNC | SND_MEMORY);
 						show_menu = !show_menu;
+						printf("opening menu!\n");
 					}
 					menu_key_was_pressed = true;
 				}
@@ -254,8 +258,7 @@ namespace hooks
 					menu_key_was_pressed = false;
 				}
 
-				if (local_player)
-				{
+				if (local_player) {
 					draw_prop_esp();
 					auto weapon = get_base_combat_weapon(local_player);
 					if (weapon)
@@ -266,14 +269,25 @@ namespace hooks
 						directx::drawing::draw_string(20, 70, D3DCOLOR_RGBA(0, 255, 255, 255), std::to_string(interfaces::client_entity_list->get_highest_entity_index()).c_str(), directx::fonts::arial);
 					}
 				}
+				//directx::drawing::draw_string(20, 70, D3DCOLOR_RGBA(0, 255, 255, 255), "KaninHax 4.2", directx::fonts::arial);
 				//directx::drawing::draw_box(100, 100, 50, 50, D3DCOLOR_RGBA(255, 0, 255, 255));
 				//directx::drawing::draw_cursor(100, D3DCOLOR_RGBA(255, 0, 255, 255));
 				//directx::drawing::draw_line(100, 100, 50, 50, 1, D3DCOLOR_RGBA(255, 0, 255, 255));
 
+				//draw_menu();
+
+				ImGui_ImplDX9_NewFrame();
+				ImGui_ImplWin32_NewFrame();
+				ImGui::NewFrame();
 				draw_menu();
+				ImGui::EndFrame();
+
+				ImGui::Render();
+				ImGui_ImplDX9_RenderDrawData(ImGui::GetDrawData());
+
 
 				_device->SetRenderState(D3DRS_COLORWRITEENABLE, old_d3drs_colorwriteenable_render_state);
-				return ret(_device);
+				return d3d_device_hook.get_original<end_scene_fn>(EndScene_Index)(_device);
 			}
 		}
 

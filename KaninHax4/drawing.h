@@ -378,10 +378,6 @@ void draw_menu()
 {
 	if (!show_menu)
 		return;
-	ImGui_ImplDX9_NewFrame();
-	ImGui_ImplWin32_NewFrame();
-	ImGui::NewFrame();
-
 	ImGui::GetIO().MouseDrawCursor = true;
 
 	ImGui::Begin("behead niggers v4");
@@ -539,5 +535,4 @@ void draw_menu()
 		}
 		ImGui::End();
 	}
-	ImGui::Render();
 }
