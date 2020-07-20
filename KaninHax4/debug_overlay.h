@@ -1,6 +1,6 @@
 #pragma once
 #include "vector3.h"
-#include "kaninsdk/virtual-table-functions.h"
+#include <kaninsdk/virtual-table-functions.h>
 
 class debug_overlay_t
 {

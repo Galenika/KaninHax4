@@ -17,15 +17,14 @@
 #include "center_print.h"
 #include "material_system.h"
 #include "models.h"
-#include "cheat_server.h"
-#include "pch.h"
+#include <d3dx9.h>
 #include <kaninsdk/pattern-scan.h>
+#include <kaninsdk/virtual-table-functions.h>
 
 #pragma comment(lib, "d3dx9.lib")
 #pragma comment(lib, "d3d9.lib")
 
 
-using namespace kaninsdk;
 template <typename T>
 T get_interface(HMODULE _module, const char* _interface_name) {
 	typedef void*(*get_interface_fn)(const char*, int);
@@ -271,13 +270,13 @@ bool can_shoot(entity_t* _player) {
 	return true;
 }
 
-kaninsdk::vtable_hook::vtable_hook_t client_hook;
-kaninsdk::vtable_hook::vtable_hook_t engine_client_hook;
-kaninsdk::vtable_hook::vtable_hook_t d3d_device_hook;
-kaninsdk::vtable_hook::vtable_hook_t client_mode_hook;
-kaninsdk::vtable_hook::vtable_hook_t panel_hook;
-kaninsdk::vtable_hook::vtable_hook_t model_render_hook;
-kaninsdk::vtable_hook::vtable_hook_t surface_hook;
+vtable_hook_t client_hook;
+vtable_hook_t engine_client_hook;
+vtable_hook_t d3d_device_hook;
+vtable_hook_t client_mode_hook;
+vtable_hook_t panel_hook;
+vtable_hook_t model_render_hook;
+vtable_hook_t surface_hook;
 
 HHOOK keyboard_hook;
 

@@ -1,11 +1,9 @@
 #pragma once
-#include "pch.h"
 #include "sdk.h"
 #include "settings.h"
 #include "drawing.h"
 #include "visible_check.h"
 #include "color.h"
-#include "pch.h"
 
 #define color2rgba(x) (x.r, x.g, x.b, x.a)
 

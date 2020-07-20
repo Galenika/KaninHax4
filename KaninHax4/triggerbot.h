@@ -1,5 +1,4 @@
 #pragma once
-#include "pch.h"
 #include "sdk.h"
 #include "settings.h"
 #include "math.h"

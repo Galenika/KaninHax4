@@ -1,4 +1,3 @@
-#include "pch.h"
 #include <kaninsdk/detour-hook.h>
 #include <kaninsdk/virtual-table-functions.h>
 #include <kaninsdk/virtual-table-pointer-swap-hook.h>
@@ -29,7 +28,7 @@ void start_cheat() {
 
 	//SETUP MODULES
 	std::cout << "finding modules..." << std::endl;
-	modules::client = GetModuleHandleA("client_panorama.dll");
+	modules::client = GetModuleHandleA("client.dll");
 	modules::engine = GetModuleHandleA("engine.dll");
 	modules::vgui2 = GetModuleHandleA("vgui2.dll");
 	modules::vguimatsurface = GetModuleHandleA("vguimatsurface.dll");
@@ -52,8 +51,8 @@ void start_cheat() {
 
 	interfaces::client_mode = **reinterpret_cast<client_mode_t***>(get_virtual_function<uintptr_t>(
 		interfaces::client, 10) + 0x5);
-	interfaces::global_vars = **reinterpret_cast<global_vars_base_t***>(get_virtual_function<uintptr_t>(
-		interfaces::client, 0) + 0x1B);
+	//interfaces::global_vars = **reinterpret_cast<global_vars_base_t***>(get_virtual_function<uintptr_t>(
+	//	interfaces::client, 0) + 0x1B);
 	interfaces::d3d_device = **reinterpret_cast<IDirect3DDevice9***>(pattern_scan(
 		modules::shaderapidx9, "\xA1\x00\x00\x00\x00\x50\x8B\x08\xFF\x51\x0C", "x????xxxxxx") + 1);
 	//interfaces::center_print = *reinterpret_cast<center_print_t**>(pattern_scan(

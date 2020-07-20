@@ -1,5 +1,4 @@
 #pragma once
-#include "pch.h"
 #include "vector3.h"
 
 #define pi (3.14159265359)

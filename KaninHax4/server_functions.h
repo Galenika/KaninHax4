@@ -1,5 +1,4 @@
 #pragma once
-#include "pch.h"
 #include "sdk.h"
 #include "settings.h"
 #include "math.h"
@@ -42,8 +41,8 @@ void print_closest_player()
 			distance = distance_to_local_player;
 		}
 	}
-	if (distance != DBL_MAX)
+	/*if (distance != DBL_MAX)
 	{
 		hack_server::server_print(std::string(std::to_string(distance) + "\n"));
-	}
+	}*/
 }

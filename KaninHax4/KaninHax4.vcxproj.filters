@@ -147,9 +147,6 @@
     <ClInclude Include="remove_sight_blur.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cheat_server.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="server_functions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -168,7 +165,7 @@
     <ClInclude Include="hud_texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="pch.h">
+    <ClInclude Include="cheat_server-backup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -176,28 +173,25 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\SDK\imgui\misc\fonts\binary_to_compressed_c.cpp">
+    <ClCompile Include="..\..\..\..\..\SDK\imgui\imgui.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="E:\SDK\imgui\imgui.cpp">
+    <ClCompile Include="..\..\..\..\..\SDK\imgui\imgui_demo.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="E:\SDK\imgui\imgui_demo.cpp">
+    <ClCompile Include="..\..\..\..\..\SDK\imgui\imgui_draw.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="E:\SDK\imgui\imgui_draw.cpp">
+    <ClCompile Include="..\..\..\..\..\SDK\imgui\imgui_widgets.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="E:\SDK\imgui\imgui_widgets.cpp">
+    <ClCompile Include="..\..\..\..\..\SDK\imgui\examples\imgui_impl_dx9.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="E:\SDK\imgui\examples\imgui_impl_dx9.cpp">
+    <ClCompile Include="..\..\..\..\..\SDK\imgui\examples\imgui_impl_win32.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="E:\SDK\imgui\examples\imgui_impl_win32.cpp">
+    <ClCompile Include="..\..\..\..\..\SDK\imgui\misc\cpp\imgui_stdlib.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
   </ItemGroup>

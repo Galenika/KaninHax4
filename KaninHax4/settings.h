@@ -1,6 +1,5 @@
 #pragma once
-#include "pch.h"
-#include "ImGui\imgui.h"
+#include <imgui\imgui.h>
 
 namespace menu_tabs
 {

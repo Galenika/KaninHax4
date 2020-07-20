@@ -1,5 +1,4 @@
 #pragma once
-#include "pch.h"
 #include "sdk.h"
 
 void remove_sight_blur()

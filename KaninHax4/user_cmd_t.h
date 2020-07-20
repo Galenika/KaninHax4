@@ -1,5 +1,4 @@
 #pragma once
-#include "pch.h"
 #include "vector3.h"
 
 class user_cmd_t

@@ -1,5 +1,4 @@
 ﻿#pragma once
-#include "pch.h"
 #include "sdk.h"
 #include "drawing.h"
 #include "aimbot.h"

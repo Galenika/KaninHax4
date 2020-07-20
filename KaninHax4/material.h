@@ -1,5 +1,4 @@
 #pragma once
-#include "pch.h"
 #include <kaninsdk/virtual-table-functions.h>
 
 enum material_var_flags_t

@@ -8,6 +8,8 @@
 #include "sdk.h"
 #include "math.h"
 #include "remove_sight_blur.h"
+#include <d3dx9.h>
+#include <deque>
 
 bool show_menu = true;
 
@@ -458,7 +460,7 @@ void draw_menu()
 				remove_sight_blur();
 			if (ImGui::Button("get local player"))
 				local_player = reinterpret_cast<entity_t*>(interfaces::client_entity_list->get_client_entity(interfaces::engine_client->get_local_player_id()));
-			ImGui::InputText("client ip", client_ip, 50);
+			/*ImGui::InputText("client ip", client_ip, 50);
 			if (ImGui::Button("connect to cheat client"))
 				hack_server::wait_for_connection(client_ip);
 			if (hack_server::number_of_connections)
@@ -494,7 +496,7 @@ void draw_menu()
 							std::cout << "unknown option..." << std::endl;
 					}
 				}
-			}
+			}*/
 			if (ImGui::Button("unload cheat"))
 				unload_cheat();
 			if (ImGui::Button("[test] queue box to drawing list"))

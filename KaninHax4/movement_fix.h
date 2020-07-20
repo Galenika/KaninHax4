@@ -1,7 +1,7 @@
 #pragma once
-#include "pch.h"
 #include "sdk.h"
 #include "math.h"
+#include <algorithm>
 
 inline class movement_fix_t
 {

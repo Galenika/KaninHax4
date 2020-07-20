@@ -1,5 +1,4 @@
 #pragma once
-#include "pch.h"
 #include "vector3.h"
 #include "matrix3x4.h"
 #include "offsets.h"
